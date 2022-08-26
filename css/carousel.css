@@ -1,0 +1,18 @@
+.container .carousel-indicators .active {
+    background-color: #fff;
+}
+.jquery{
+    max-height: 475px;
+}
+
+.carousel-item img {
+    max-width: 950px;
+    width: auto;
+    margin: auto;
+    border-radius: 15px;
+}
+
+/* featurette */
+.featurette img {
+    border-radius: 15px;
+}

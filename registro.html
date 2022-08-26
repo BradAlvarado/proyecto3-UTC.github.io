@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JavaScripts -->
+  <script src="js/bootstrap.js"></script>
+  <script src="js/fontawesome.js"></script>
+  <script src="js/jquery-2.1.4.js"></script>
+
+  <!-- Icono -->
+  <link rel="icon" href="images/codefolder.ico">
+
+  <title>Formulario Registro</title>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 mb-5">
+
+    <div class="container">
+
+      <a class="navbar-brand title">Proyecto Examen III</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav" style="margin: auto;">
+          <li class="nav-item me-1"> <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="portada.html">Portada</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" target="_blank" href="https://www.utc.ac.cr/web_i/">UTC</a>
+          </li>
+
+          <li class="nav-item mx-1">
+            <a class="nav-link active" aria-current="page" href="registro.html"> Formulario de Registro</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="notas.html"> Lista de Notas</a>
+          </li>
+          <li class="nav-item ms-1">
+            <a class="nav-link" href="grid.html">Grid</a>
+          </li>
+        </ul>
+
+        <div class="nav">
+          <li class="nav-item">
+            <a class="btn btn-outline-success " role="button" href="contactenos.html">Contáctame <i
+                class="fa-solid fa-address-card"></i></a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Principal -->
+  <div class="container ">
+    <div class="row">
+      <h2 class="mb-3">Formulario de Registro</h2>
+
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+
+        <form method="dialog" name="formulario">
+
+          <div class="mb-3">
+            <label for="cedula" class="form-label">Cédula</label>
+            <input type="text" class="form-control" id="campo" name="cedula" aria-describedby="emailHelp" placeholder="1-10203040">
+          </div>
+
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="campo" name="nombre" placeholder="Brad Reyes">
+          </div>
+
+          <div class="mb-3">
+            <label for="nacimiento" class="form-label">Fecha Nacimiento</label>
+            <input type="date" class="form-control" name="nacimiento">
+          </div>
+
+          <label for="genero" class="form-label">Género</label>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino" checked>
+            <label class="form-check-label" for="masculino">Masculino</label>
+          </div>
+
+          <div class="mb-3 form-check">
+            <input class="form-check-input" type="radio" name="genero" id="femenino" value="femenino">
+            <label class="form-check-label" for="femenino">Femenino</label>
+          </div>
+
+          <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección Física</label>
+            <textarea class="form-control" rows="5" name="direccion" style="resize: none;" placeholder="Dirección"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="text" class="form-control" name="telefono" placeholder="8888-8888">
+          </div>
+
+          <div class="mb-3">
+            <label for="fechaInicio" class="form-label">Fecha Inicio labores</label>
+            <input type="date" class="form-control" name="fechaInicio">
+          </div>
+        </div> <!-- fin col-12 -->
+
+         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" name="correo" placeholder="email@example.com">
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password Sistema</label>
+          <input type="password" class="form-control" name="password" placeholder="***********">
+        </div>
+
+        <label for="tipoPago" class="form-label">Tipo de Pago</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="tipoPago" id="ordinario" value="ordinario" checked>
+          <label class="form-check-label" for="ordinario">Pago Ordinario</label>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input class="form-check-input" type="radio" name="tipoPago" id="extraordinario" value="extraordinario">
+          <label class="form-check-label" for="extraordinario">Pago Extraordinario</label>
+        </div>
+
+        <label for="horas" class="form-label">Cantidad Horas Laboradas *</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">h</span>
+          <input type="number" class="form-control" name="horas">
+        </div>
+
+
+        <label for="precio" class="form-label">Precio por Hora *</label>
+        <div class="input-group mb-4">
+          <span class="input-group-text" id="basic-addon1">₡</span>
+          <input type="number" class="form-control" name="precio">
+        </div>
+
+        <label for="pago" class="form-label">Salario</label> <br>
+        <div class="input-group mb-5">
+          <span class="input-group-text" id="basic-addon1">₡</span>
+          <input type="text" class="form-control" id="pago" name="pago" aria-describedby="basic-addon1" readonly>
+        </div>
+
+        <div class="d-grid gap-3">
+          <button class="btn btn-success" id="registrar" onclick="generarPlanilla()">Resgistrar</button>
+          <button type="reset" class="btn btn-outline-primary">Limpiar Datos</button>
+        </div>
+        <script src="js/registro.js"></script>
+
+        </form> <!-- fin form-->
+      </div> <!-- fin col-12 -->
+    </div> <!-- fin row-->
+  </div> <!-- fin container-->
+
+  <!-- Footer -->
+  <script src="js/footer.js"></script>
+
+  <!-- Librería para alertas-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
+</body>
+
+</html>

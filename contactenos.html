@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Icono -->
+  <link rel="icon" href="images/contacto.ico">
+
+  <!-- JavaScripts -->
+  <script src="js/bootstrap.js"></script>
+  <script src="js/fontawesome.js"></script>
+  <script src="js/jquery-2.1.4.js"></script>
+
+  <title>Contacto</title>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 mb-5">
+
+    <div class="container">
+
+      <a class="navbar-brand title">Proyecto Examen III</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav" style="margin: auto;">
+          <li class="nav-item me-1"> <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="portada.html">Portada</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" target="_blank" href="https://www.utc.ac.cr/web_i/">UTC</a>
+          </li>
+
+          <li class="nav-item mx-1">
+            <a class="nav-link" aria-current="page" href="registro.html"> Formulario de Registro</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="notas.html"> Lista de Notas</a>
+          </li>
+          <li class="nav-item ms-1">
+            <a class="nav-link" href="grid.html">Grid</a>
+          </li>
+        </ul>
+
+        <div class="nav">
+          <li class="nav-item">
+            <a class="btn btn-success active" role="button" href="contactenos.html">Contáctame <i
+                class="fa-solid fa-address-card"></i></a>
+          </li>
+        </div>
+      </div>
+
+    </div>
+  </nav> <br><br><br>
+
+  <!-- Principal -->
+  <div class="container mb-5">
+
+    <form name="formulario" action="https://formsubmit.co/brad.ralvarado@gmail.com"
+      class="fContacto p-4 bg-dark text-white" method="POST">
+
+      <h3 class="text-center py-2">Formulario de Contacto</h3>
+      <hr>
+      <label for="nombre" class="form-label">Nombre y Apellido *</label>
+
+      <div class="input-group mb-4">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-user"></i></span>
+        <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="nameHelp"
+          placeholder="ej. Cristiano Ronaldo" required>
+      </div>
+
+      <label for="correo" class="form-label">Correo Electrónico *</label>
+
+      <div class="input-group mb-4">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-envelope"></i></span>
+        <input type="email" name="correo" class="form-control" id="correo" aria-describedby="emailHelp"
+          placeholder="email@example.com" required>
+
+      </div>
+      <div class="mb-3">
+        <label for="comentario" class="form-label">Comentario</label>
+        <textarea type="text" name="comentario" class="form-control mb-5" id="comentario" aria-describedby="Coments"
+          placeholder="Comenta aquí"></textarea>
+      </div>
+
+      <div class="d-grid gap-2 mt-4">
+        <button type="submit" class="btn btn-success block" id="enviar" onclick="alerta()">Enviar</button>
+      </div>
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactenos.html">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+
+    <script type="text/javascript">
+
+      //funcion con JQuery con alertas de la librería Sweetalert 2
+
+      $(document).ready(function () {
+        function verifica() {
+          var nombre = $("#nombre").val();
+          var correo = $("#correo").val();
+
+          let alertaError = function () {
+            Swal.fire({
+              title: 'Error!',
+              text: 'Datos sin completar',
+              icon: 'error',
+              toast: true,
+              confirmButtonColor: "#198754"
+            });
+          }
+
+          let alertaSuccess = function () {
+            Swal.fire({
+              title: 'Correo enviado correctamente!',
+              text: `Hola ${nombre}! Gracias por Contactarme!`,
+              icon: 'success',
+              toast: true,
+              confirmButtonColor: "#198754"
+            });
+          }
+          if (nombre == "" || correo == "") { alertaError(); } else { alertaSuccess(); }
+        }
+
+        //evento click JQuery
+        $("#enviar").click(verifica);
+
+      });
+    </script>
+
+  </div><br><br>
+  <!-- Footer -->
+  <script src="js/footer.js"></script>
+
+  <!-- Librería para alertas sweetalert2 -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
+
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+</body>
+
+</html>

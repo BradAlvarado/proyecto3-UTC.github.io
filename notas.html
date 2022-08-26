@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JavaScripts -->
+  <script src="js/bootstrap.js"></script>
+  <script src="js/fontawesome.js"></script>
+
+  <!-- Icono -->
+  <link rel="icon" href="images/codefolder.ico">
+
+  <title>Lista de Notas</title>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 mb-5">
+
+    <div class="container">
+
+      <a class="navbar-brand title">Proyecto Examen III</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav" style="margin: auto;">
+          <li class="nav-item me-1"> <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="portada.html">Portada</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" target="_blank" href="https://www.utc.ac.cr/web_i/">UTC</a>
+          </li>
+
+          <li class="nav-item mx-1">
+            <a class="nav-link" aria-current="page" href="registro.html"> Formulario de Registro</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link active" href="notas.html"> Lista de Notas</a>
+          </li>
+          <li class="nav-item ms-1">
+            <a class="nav-link" href="grid.html">Grid</a>
+          </li>
+        </ul>
+
+        <div class="nav">
+          <li class="nav-item">
+            <a class="btn btn-outline-success " role="button" href="contactenos.html">Contáctame <i
+                class="fa-solid fa-address-card"></i></a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <!-- Principal -->
+  <div class="container mt-4">
+
+    <table class="table table-striped mb-5">
+      <thead>
+        <th class="text-center bg-dark text-white py-4" colspan="5" scope="col"> <h4>Lista de Notas Estudiantes Programación III</h4> 
+        </th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="row">1</th>
+          <th scope="row">2</th>
+          <th scope="row">3</th>
+          <th scope="row">4</th>
+
+        </tr>
+
+        <tr>
+          <th scope="col">Cédula</th>
+          <td scope="row">52</td>
+          <td scope="row">74</td>
+          <td scope="row">12</td>
+          <td scope="row">82</td>
+
+        </tr>
+
+        <tr>
+          <th scope="col">Nombre</th>
+          <td>Christian</td>
+          <td>Lionel</td>
+          <td>Brad</td>
+          <td>Henry</td>
+        </tr>
+        <tr>
+          <th scope="col">Apellido</th>
+          <td>Bolaños</td>
+          <td>Messi</td>
+          <td>Reyes</td>
+          <td>Picado</td>
+        </tr>
+        <tr>
+          <th scope="col">Examen1</th>
+          <td>98</td>
+          <td>97</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <th scope="col">Examen2</th>
+          <td>98</td>
+          <td>96</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <th scope="col">Examen3</th>
+          <td>98</td>
+          <td>95</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <th scope="col">Promedio</th>
+          <td>98</td>
+          <td>96</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="mb-5 bg-light py-2 border">
+      <button class="btn btn-primary btn-sm">Añadir  <i class="fa-solid fa-plus"></i></button>
+      <button class="btn btn-danger btn-sm">Eliminar  <i class="fa-solid fa-trash-can"></i></button>
+      <div style="float: right;">
+        <button class="btn btn-success btn-sm"> <i class="fa-solid fa-arrows-rotate"></i> </button>
+        <button class="btn btn-secondary btn-sm">Editar <i class="fa-solid fa-pen"></i></button>
+      </div>
+    </div>
+
+  </div>
+  <br><br><br>
+
+  <!-- Footer -->
+  <script src="js/footer.js"></script>
+
+</body>
+
+</html>
