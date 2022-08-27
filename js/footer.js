@@ -24,7 +24,7 @@ document.write('<!-- Footer -->'+
 
        '<!-- Gmail -->'+
        '<a class="btn btn-outline-light btn-floating m-1" href="contactenos.html"'+
-       'role="button"><i class="bi bi-envelope"></i>'+
+       'role="button"><i class="bi bi-envelope-fill"></i>'+
      '</a>'+
    ' </section>'+
   '</div>'+

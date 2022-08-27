@@ -4,7 +4,7 @@ document.write('<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 mb-
 
 '<div class="container">' +
 
-  '<a class="navbar-brand title">Proyecto Examen III</a>'+
+  '<a class="navbar-brand mx-0">Proyecto Examen 3</a>'+
 
   '<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"'+
     'aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">'+
@@ -14,7 +14,7 @@ document.write('<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 mb-
   
     '<ul class="navbar-nav" style="margin: auto;">'+
 
-      '<li class="nav-item me-1"> <a class="nav-link active" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a> </li>'+
+      '<li class="nav-item me-1"> <a class="nav-link active" href="index.html">Inicio</a> </li>'+
       '<li class="nav-item mx-1">'+
         '<a class="nav-link" href="portada.html">Portada</a>'+
       '</li>'+

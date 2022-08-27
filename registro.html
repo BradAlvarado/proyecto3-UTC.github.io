@@ -15,7 +15,7 @@
   <script src="js/jquery-2.1.4.js"></script>
 
   <!-- Icono -->
-  <link rel="icon" href="images/codefolder.ico">
+  <link rel="icon" href="images/main.ico">
 
   <title>Formulario Registro</title>
 </head>
@@ -27,7 +27,7 @@
 
     <div class="container">
 
-      <a class="navbar-brand title">Proyecto Examen III</a>
+      <a class="navbar-brand title mx-0">Proyecto Examen 3</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
 
         <ul class="navbar-nav" style="margin: auto;">
-          <li class="nav-item me-1"> <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+          <li class="nav-item me-1"> <a class="nav-link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item mx-1">
             <a class="nav-link" href="portada.html">Portada</a>
@@ -77,12 +77,12 @@
 
           <div class="mb-3">
             <label for="cedula" class="form-label">Cédula</label>
-            <input type="text" class="form-control" id="campo" name="cedula" aria-describedby="emailHelp" placeholder="1-0000-0000">
+            <input type="text" class="form-control" id="campo" name="cedula" aria-describedby="emailHelp" placeholder="#-####-####">
           </div>
 
           <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="campo" name="nombre" placeholder="ej. Brad">
+            <input type="text" class="form-control" id="campo" name="nombre" placeholder="Nombre">
           </div>
 
           <div class="mb-3">
@@ -104,12 +104,12 @@
 
           <div class="mb-3">
             <label for="direccion" class="form-label">Dirección Física</label>
-            <textarea class="form-control" rows="5" name="direccion" style="resize: none;" placeholder="ej. Calle 8 "></textarea>
+            <textarea class="form-control" rows="5" name="direccion" style="resize: none;" placeholder="Dirección"></textarea>
           </div>
 
           <div class="mb-3">
             <label for="telefono" class="form-label">Teléfono</label>
-            <input type="text" class="form-control" name="telefono" placeholder="####-####">
+            <input type="text" class="form-control" name="telefono" placeholder="8888-8888">
           </div>
 
           <div class="mb-3">
@@ -144,20 +144,20 @@
         <label for="horas" class="form-label">Cantidad Horas Laboradas *</label>
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1">h</span>
-          <input type="number" class="form-control" name="horas">
+          <input type="number" class="form-control" name="horas" placeholder="0">
         </div>
 
 
         <label for="precio" class="form-label">Precio por Hora *</label>
         <div class="input-group mb-4">
           <span class="input-group-text" id="basic-addon1">₡</span>
-          <input type="number" class="form-control" name="precio">
+          <input type="number" class="form-control" name="precio" placeholder="0">
         </div>
 
         <label for="pago" class="form-label">Salario</label> <br>
         <div class="input-group mb-5">
           <span class="input-group-text" id="basic-addon1">₡</span>
-          <input type="text" class="form-control" id="pago" name="pago" aria-describedby="basic-addon1" readonly>
+          <input type="text" class="form-control" id="pago" name="pago" placeholder="0" readonly>
         </div>
 
         <div class="d-grid gap-3">

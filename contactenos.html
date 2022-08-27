@@ -27,7 +27,7 @@
 
     <div class="container">
 
-      <a class="navbar-brand title">Proyecto Examen III</a>
+      <a class="navbar-brand mx-0">Proyecto Examen 3</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,8 +35,8 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
 
-        <ul class="navbar-nav me-1" style="margin: auto;">
-          <li class="nav-item"> <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+        <ul class="navbar-nav" style="margin: auto;">
+          <li class="nav-item me-1"> <a class="nav-link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item mx-1">
             <a class="nav-link" href="portada.html">Portada</a>
@@ -51,7 +51,7 @@
           <li class="nav-item mx-1">
             <a class="nav-link" href="notas.html"> Lista de Notas</a>
           </li>
-          <li class="nav-item ms-1">
+          <li class="nav-item mx-1">
             <a class="nav-link" href="grid.html">Grid</a>
           </li>
         </ul>
@@ -100,7 +100,7 @@
       <div class="d-grid gap-2 mt-4">
         <button type="submit" class="btn btn-success block" id="enviar" onclick="alerta()">Enviar</button>
       </div>
-      <input type="hidden" name="_next" value="https://bradalvarado.github.io/proyecto3-UTC.github.io/contactenos.html">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactenos.html">
       <input type="hidden" name="_captcha" value="false">
     </form>
 
@@ -125,7 +125,7 @@
 
           let alertaSuccess = function () {
             Swal.fire({
-              title: 'Enviando correo...',
+              title: 'Correo enviado correctamente!',
               text: `Hola ${nombre}! Gracias por Contactarme!`,
               icon: 'success',
               toast: true,
